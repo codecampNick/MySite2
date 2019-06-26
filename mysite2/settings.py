@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'languages.apps.LanguagesConfig'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates'
+            'templates',
+            'languages/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

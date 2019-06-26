@@ -7,3 +7,14 @@ body{
 .home-text{
     color: white;
 }
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    color: black;
+    background-color: white;
+    opacity: .9;
+    padding: 20px;
+    margin-top: 20px;
+}
