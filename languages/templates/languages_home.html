@@ -4,4 +4,9 @@
 {% block content %}
     <h1>Languages Home</h1>
     <p>Languages I use!</p>
+    <ul>
+        {% for lang in langs %}
+        <li>{{ lang.name }}</li>
+        {% endfor %}
+    </ul>
 {% endblock content %}
