@@ -1,10 +1,15 @@
 {% extends 'index.html' %}
 
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/languages.css' %}" />
+{% endblock css %}
 {% block nav_bar_languages %} active{% endblock nav_bar_languages %}
 {% block content %}
-    <h1>Languages Home</h1>
-    <p>Languages I use!</p>
-    <ul>
+    <h1 class="lang-main-text">Languages Home</h1>
+    <p class="lang-main-text">Languages I use!</p>
+    <ul class="lang-main-text">
         {% for lang in langs %}
         <li>{{ lang.name }}</li>
         {% endfor %}
