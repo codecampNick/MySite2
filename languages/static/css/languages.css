@@ -1,3 +1,41 @@
-.lang-main-text{
+body{
+    background: url("../images/surferSun.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.lang-body{
+    background-color: rgba(0,0,0, 0.7);
     color: white;
+    border-radius: 10px;
+    opacity: .9;
+    padding: 25px;
+    width: 35em;
+}
+
+.code{
+    margin-left: 50px;
+}
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0%;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
 }

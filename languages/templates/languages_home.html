@@ -1,17 +1,32 @@
 {% extends 'index.html' %}
-
+{% block title %} {{ title }} {%endblock title%}
 {% load static %}
 {% block css%}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{% static 'css/languages.css' %}" />
 {% endblock css %}
 {% block nav_bar_languages %} active{% endblock nav_bar_languages %}
+{% load languages_filters %}
 {% block content %}
-    <h1 class="lang-main-text">Languages Home</h1>
-    <p class="lang-main-text">Languages I use!</p>
-    <ul class="lang-main-text">
-        {% for lang in langs %}
-        <li>{{ lang.name }}</li>
-        {% endfor %}
-    </ul>
+    <h1>Languages Home</h1>
+    <div class="lang-body">
+        <div class="code">
+            def get_languages():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return SELECT * FROM languages<br><br>
+            loveToCode = True<br>
+            languages = get_languages()<br>
+            if loveToCode == true:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for lang in languages:<br>
+                        {% for lang in langs %}
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ lang.name }} <span class="lang-rating-value stars-outer"><span class="stars-inner" style="width: {{ star_value|get_item:lang.name }}%" data="{{ lang.experience_level }}"></span></span><br>
+                        {% endfor %}
+            else:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get(another_career)<br>
+        </div>
+
+    </div>
+
 {% endblock content %}
+{% block js %}
+    <script type="text/javascript" src="{% static 'js/languages.js' %}"></script>
+{% endblock js %}
