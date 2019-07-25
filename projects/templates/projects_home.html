@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}"/>
+{% endblock css %}
+
+{% block title %}{{ title }} {% endblock title %}
+{% block nav_bar_projects %} active{% endblock nav_bar_projects %}
+{% block content %}
+<h1>Projects</h1>
+<h4>Some of the things I've done.</h4>
+{% for project in projects %}
+<div class="card" style="width: 18rem">
+  <div class="card-body pro-card-text">
+    <h5 class="card-title">{{ project.name }}</h5>
+    <p class="card-text">{{ project.short_description }}</p>
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+  </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
