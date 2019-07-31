@@ -1,0 +1,84 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/employment.css' %}" />{% endblock css %}
+{% block nav_bar_employment %} active {% endblock nav_bar_employment %}
+{% block title%} {{ title }} {% endblock title %}
+{% block content %}
+    <div class="content">
+        <h1>Employment</h1>
+    <!--<div id="employment-home" class="emp-header">
+        <div class="emp-base header name">Employer Details</div>
+        <div class="emp-base header accomp">Accomplishments</div>
+        <div class="emp-base header description">Description</div>
+        {% for employer in employers %}
+        <div class="emp-base holder-details">
+            <span><u><a href="employment/{{ employer.name|slugify|lower }}">{{ employer.name }}</a></span></u><br />
+            <span>{{ employer.title }}</span><br />
+            <span>{{ employer.type }}</span><br />
+            <span>{{ employer.start_date|date:'F Y' }} | {% if employer.end_date == '' or employer.end_date == none  %}
+                                                            Current
+                                                        {% else %}
+                                                            {{ employer.end_date|date:'F Y' }}
+                                                        {% endif %}
+            </span>
+        </div>
+        <div class="emp-base holder-accomp" style="background-color: lightblue">
+            Accomplishments
+            <ul>
+                {% for accomp in accomplishments %}
+                    {% if accomp.company_name|stringformat:"s" == employer.name %}
+                        <li><span>{{ accomp.title }}</span>
+                            <ul>
+                                <li>{{ accomp.description }}</li>
+                            </ul>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="emp-base holder-desc">{{ employer.company_description }}</div>
+        {% endfor %}
+    </div>-->
+        <div>
+            <div class="row emp-header">
+                <div class="col-lg-4">Employer Details</div>
+                <div class="col-lg-4">Accomplishments</div>
+                <div class="col-lg-4">Employer Description</div>
+            </div>
+            {% for employer in employers %}
+            <div class="row emp-body {% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
+                    <div class="col-lg-4"><span><u><a href="{{ employer.name|slugify|lower }}">{{ employer.name }}</a></span></u><br />
+                    <span>{{ employer.title }}</span><br />
+                    <span>{{ employer.type }}</span><br />
+                    <span>{{ employer.start_date|date:'F Y' }} | {% if employer.end_date == '' or employer.end_date == none  %}
+                                                                    Current
+                                                                {% else %}
+                                                                    {{ employer.end_date|date:'F Y' }}
+                                                                {% endif %}
+                    </span>
+                </div>
+                <div class="col-lg-4">
+                    <ul>
+                    {% for accomp in accomplishments %}
+                        {% if accomp.company_name|stringformat:"s" == employer.name %}
+                            <li><span>{{ accomp.title }}</span>
+                                <ul>
+                                    <li>{{ accomp.description }}</li>
+                                </ul>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                </div>
+                <div class="col-lg-4">
+                    {{ employer.company_description }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    <script type="text/javascript" src="{% static 'js/employment.js' %}"></script>
+{% endblock js%}

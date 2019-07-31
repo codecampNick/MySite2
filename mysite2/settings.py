@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from . import secret
 import pymysql
 pymysql.install_as_MySQLdb()
-from . import secret
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = secret.s_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = secret.hosts
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'employment.apps.EmploymentConfig',
     'languages.apps.LanguagesConfig',
     'projects.apps.ProjectsConfig',
 ]
@@ -64,6 +65,7 @@ TEMPLATES = [
         'DIRS': [
             'templates',
             'languages/templates',
+            'projects/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

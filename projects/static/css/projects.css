@@ -11,7 +11,8 @@ h1, h4{
     /*background: rgba(220,220,220,0.2);*/
     background: rgba(255,255,255,0.1);
     border: white solid 1px;
-    margin: 15px;
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
 
 .pro-card-text{
