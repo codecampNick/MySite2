@@ -7,7 +7,7 @@ h1{
 }
 
 a{
-    color: rgba(144, 47, 26);
+    color: rgba(250, 221, 197);
     /*text-shadow: -.5px 0 black, 0 1px black, 1px 0 black, 0 -.5px black;*/
 }
 
@@ -16,10 +16,10 @@ a:hover{
 }
 
 .odd{
-    background-color: rgba(218, 204, 201, 0.3);
+    background-color: rgba(218, 204, 201, 0.1);
 }
 .even{
-    background-color: rgba(217, 183, 176, 0.3);
+    background-color: rgba(217, 183, 176, 0.1);
 }
 /*#employment-home{
     display: grid;
@@ -48,6 +48,7 @@ a:hover{
     border-left: black solid 3px;
     border-radius: 5px;
     margin-top: 5px;
+    color: rgba(250, 221, 197);
 }
 
 /*
