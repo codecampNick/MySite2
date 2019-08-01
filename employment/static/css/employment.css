@@ -2,9 +2,6 @@ body{
     background: url("../images/sunset.jpg") no-repeat center center fixed;
     background-size: cover;
 }
-h1{
-    color: rgba(217, 183, 176);
-}
 
 a{
     color: rgba(250, 221, 197);
@@ -49,6 +46,10 @@ a:hover{
     border-radius: 5px;
     margin-top: 5px;
     color: rgba(250, 221, 197);
+}
+
+.aerios-header{
+    color: rgba(217, 183, 176);
 }
 
 /*

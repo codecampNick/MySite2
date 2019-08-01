@@ -41,13 +41,13 @@
     </div>-->
         <div>
             <div class="row emp-header">
-                <div class="col-lg-4">Employer Details</div>
-                <div class="col-lg-4">Accomplishments</div>
-                <div class="col-lg-4">Employer Description</div>
+                <div class="col-lg-4 col-xs-1">Employer Details</div>
+                <div class="col-lg-4 col-xs-1">Accomplishments</div>
+                <div class="col-lg-4 col-xs-1">Employer Description</div>
             </div>
             {% for employer in employers %}
             <div class="row emp-body {% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
-                    <div class="col-lg-4"><span><u><a href="{{ employer.name|slugify|lower }}">{{ employer.name }}</a></span></u><br />
+                    <div class="col-lg-4 col-xs-1"><span><u><a href="{{ employer.name|slugify|lower }}">{{ employer.name }}</a></span></u><br />
                     <span>{{ employer.title }}</span><br />
                     <span>{{ employer.type }}</span><br />
                     <span>{{ employer.start_date|date:'F Y' }} | {% if employer.end_date == '' or employer.end_date == none  %}
@@ -57,7 +57,7 @@
                                                                 {% endif %}
                     </span>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xs-1">
                     <ul>
                     {% for accomp in accomplishments %}
                         {% if accomp.company_name|stringformat:"s" == employer.name %}
@@ -70,7 +70,7 @@
                     {% endfor %}
                 </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-xs-1">
                     {{ employer.company_description }}
                 </div>
             </div>

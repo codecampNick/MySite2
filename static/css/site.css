@@ -19,6 +19,10 @@ body{
     margin-bottom: 70px;
 }
 
+#content{
+    margin: 25px;
+}
+
 .home-text{
     color: white;
 }
