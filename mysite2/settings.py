@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'employment.apps.EmploymentConfig',
     'languages.apps.LanguagesConfig',
     'projects.apps.ProjectsConfig',
+    'contact.apps.ContactConfig'
 ]
 
 MIDDLEWARE = [
@@ -64,6 +65,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'templates',
+            'contact/templates',
+            'employment/templates',
             'languages/templates',
             'projects/templates',
         ],
@@ -143,3 +146,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     os.path.join(BASE_DIR, 'languages/static'),
 ]
+
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = secret.aws_email_access_key_id
+AWS_SECRET_ACCESS_KEY = secret.aws_email_secret_access_key
