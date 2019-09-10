@@ -4,7 +4,7 @@ from django import forms
 class ContactForm(forms.Form):
     from_email = forms.EmailField(label='Email', required=True,
                                   widget=forms.TextInput(attrs={'placeholder': 'your.email@address.com',
-                                                                'size': '22'}))
+                                                                'size': '24'}))
     subject = forms.CharField(required=True,
                               widget=forms.TextInput(attrs={'placeholder': 'I\'d like to chat because.... :)',
                                                             'size': '24'}))
