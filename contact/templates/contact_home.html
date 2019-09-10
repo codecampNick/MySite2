@@ -1,15 +1,9 @@
 {% extends 'index.html' %}
+{% load static %}
 {% block nav_bar_contact %} active {% endblock nav_bar_contact %}
 {% block title%} {{ title }} {% endblock title %}
 {% block content %}
     <div class="content">
-        <!--<form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <div class="form-actions">
-                <button type="submit">Send</button>
-            </div>
-        </form>-->
         <form action="" method="post">
             {% csrf_token %}
             <ul style="list-style: none;">
