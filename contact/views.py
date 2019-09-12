@@ -18,7 +18,7 @@ def index(request):
             except BadHeaderError:
                 return HttpResponse('Invalid Header Found')
             return HttpResponseRedirect('success')
-    return render(request,'contact_home.html', {'title': 'Contact Home','form': form})
+    return render(request,'contact_home.html', {'title': 'Contact Home','form': form, 'n': range(5)})
 
 
 def successView(request):
