@@ -2,8 +2,6 @@ body{
    /* background-color: blue;*/
     background: url("../images/whale.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
 }
 .navbar{
     position: fixed;
