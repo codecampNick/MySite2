@@ -3,7 +3,7 @@
 {% block nav_bar_contact %} active {% endblock nav_bar_contact %}
 {% block content %}
     <div class="content">
-        <div>
+        <!--<div>
             <form action="" method="post">
             {% csrf_token %}
                 <ul style="list-style: none;">
@@ -13,6 +13,11 @@
                     <button class="btn btn-primary" type="submit">Send!</button>
                 </ul>
             </form>
-        </div>
+        </div>-->
+        <ul>
+            {% for i in n %}
+            <li>stuff, iteration {{ i }}</li>
+            {% endfor %}
+        </ul>
     </div>
 {% endblock content %}
