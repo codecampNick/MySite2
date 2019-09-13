@@ -144,7 +144,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'contact/static'),
+    os.path.join(BASE_DIR, 'employment/static'),
     os.path.join(BASE_DIR, 'languages/static'),
+    os.path.join(BASE_DIR, 'projects/static'),
 ]
 
 EMAIL_BACKEND = 'django_ses.SESBackend'

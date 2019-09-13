@@ -8,7 +8,7 @@
             {% csrf_token %}
                 <ul style="list-style: none;">
                     {% for field in form %}
-                    <li><span style="display: block;width: 100px;">{{ field.label }}</span>{{ field }}</li>
+                    <li><span id="field-lbl" style="display: block;width: 215px;">{{ field.label }}<span id="field-help-text" style="float: right;padding-top: 3px;font-size:13px;color: indianred"> {{field.help_text}}</span></span>{{ field }}</li>
                     {% endfor %}
                     <button class="btn btn-primary" type="submit">Send!</button>
                 </ul>
