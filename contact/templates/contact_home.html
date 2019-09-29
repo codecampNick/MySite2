@@ -1,5 +1,7 @@
 {% extends 'index.html' %}
 {% block title%}{{ title }}{% endblock title %}
+{% load static %}
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}" />{% endblock css %}
 {% block nav_bar_contact %} active {% endblock nav_bar_contact %}
 {% block content %}
     <div class="content">
@@ -8,7 +10,7 @@
             {% csrf_token %}
                 <ul style="list-style: none;">
                     {% for field in form %}
-                    <li><span id="field-lbl" style="display: block;width: 215px;">{{ field.label }}<span id="field-help-text" style="float: right;padding-top: 3px;font-size:13px;color: indianred"> {{field.help_text}}</span></span>{{ field }}</li>
+                    <li><span id="field-lbl">{{ field.label }}<span id="field-help-text"><span id="{{ field.html_name }}_count">{{ field.field.max_length }}</span> {{field.help_text}}</span></span><span id="field">{{ field }}</span><p>{{ field.errors.as_text}}</p></li>
                     {% endfor %}
                     <button class="btn btn-primary" type="submit">Send!</button>
                 </ul>
@@ -16,3 +18,6 @@
         </div>
     </div>
 {% endblock content %}
+{% block js %}
+    <script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+{% endblock js%}

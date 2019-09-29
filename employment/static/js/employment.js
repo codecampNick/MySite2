@@ -1,3 +1,8 @@
+function testingThis(){
+    console.log("From a function!");
+}
+
 $(document).ready(function(){
-    //alert("from js folderr");
+    //alert("from js folder");
+    //testingThis();
 });

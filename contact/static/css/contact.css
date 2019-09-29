@@ -1,0 +1,11 @@
+#field-lbl{
+    display: block;
+    width: 250px;
+}
+
+#field-help-text{
+    float: right;
+    padding-top: 3px;
+    font-size:13px;
+    color: indianred;
+}
