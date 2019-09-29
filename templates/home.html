@@ -1,5 +1,7 @@
 {% extends 'index.html' %}
 {% block title %}Nick's Home{% endblock title %}
+{% load static %}
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}" />{% endblock css %}
 {% block nav_bar_home %} active {% endblock nav_bar_home %}
 {% block content %}
     <div class="content">
