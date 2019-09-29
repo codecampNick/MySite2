@@ -1,8 +1,29 @@
 body{
-   /* background-color: blue;*/
+   /* background-color: blue;
     background: url("../images/whale.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover;*/
 }
+@media (min-width: 40px) {
+    body {
+
+        background: url("../images/whale_phone.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+/*
+@media (min-width: 500px) {
+    body {
+        background: blue;
+    }
+}
+*/
+@media (min-width: 600px) {
+    body {
+        background: url("../images/whale.jpg") no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
 .navbar{
     position: fixed;
     top: 0;
