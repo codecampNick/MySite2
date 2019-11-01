@@ -61,3 +61,8 @@ body{
 a{
     color: red;
 }
+
+.weather{
+    color: white;
+    font-size: 14px;
+}
