@@ -1,3 +1,7 @@
+function convertTemp(temp){
+    return temp == null? "No Info": parseFloat((temp * 1.8) + 32).toFixed(1) + "&deg;";
+};
+
 $(document).ready(function(){
     console.log("Hi");
     let parkerRequest = new XMLHttpRequest();
@@ -5,7 +9,8 @@ $(document).ready(function(){
     parkerRequest.onload = function(){
         let data = JSON.parse(this.response);
         let curCond = data.properties.textDescription;
-        let tempInF = parseFloat((data.properties.temperature.value * 1.8) + 32).toFixed(1);
+        let tempInF = data.properties.temperature.value;
+        tempInF = convertTemp(tempInF);
         let parkerTime = new Date(data.properties.timestamp).toLocaleString("en-US", {timeZone: "America/Denver"});
         $("#parkerTime").append(parkerTime);
         $("#parkerCurrentCond").append(curCond);
@@ -18,9 +23,9 @@ $(document).ready(function(){
     konaRequest.onload = function(){
         let kdata = JSON.parse(this.response);
         let kCurrentCond = kdata.properties.textDescription;
-        let kTempInF = parseFloat((kdata.properties.temperature.value * 1.8) + 32).toFixed(1);
+        let kTempInF = kdata.properties.temperature.value;
+        kTempInF = convertTemp(kTempInF);
         let konaTime = new Date(kdata.properties.timestamp).toLocaleString("en-US", {timeZone: "Pacific/Honolulu"});
-
         $("#konaTime").append(konaTime);
         $("#konaCurrentCond").append(kCurrentCond);
         $("#konaTemp").append(kTempInF);

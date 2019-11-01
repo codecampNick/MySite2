@@ -45,7 +45,8 @@ body{
 }
 
 .home-text{
-    color: white;
+    /*color: white;*/
+    color: rgba(255,255,204);
 }
 .footer{
     position: fixed;
@@ -63,7 +64,7 @@ a{
 }
 
 .weather{
-    color: white;
+    color: rgba(255,255,204);
     font-size: 14px;
 }
 
