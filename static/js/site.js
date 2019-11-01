@@ -4,13 +4,12 @@ $(document).ready(function(){
     parkerRequest.open("GET", 'https://api.weather.gov/stations/KAPA/observations/latest', true)
     parkerRequest.onload = function(){
         let data = JSON.parse(this.response);
-        console.log(JSON.stringify(data));
-        console.log(data.properties.temperature.value)
         let curCond = data.properties.textDescription;
-        let tempInF = (data.properties.temperature.value * 1.8) + 32;
+        let tempInF = parseFloat((data.properties.temperature.value * 1.8) + 32).toFixed(1);
         let parkerTime = new Date(data.properties.timestamp).toLocaleString("en-US", {timeZone: "America/Denver"});
-        console.log(tempInF);
-        $("#parker").append("Parker<br />Last Updated: " + parkerTime + "<br />Current Conditions: " + curCond + "<br />Temp: " + parseFloat(tempInF).toFixed(1) + "&deg;" );
+        $("#parkerTime").append(parkerTime);
+        $("#parkerCurrentCond").append(curCond);
+        $("#parkerTemp").append(tempInF);
     };
     parkerRequest.send();
     console.log("kona request")
@@ -19,9 +18,12 @@ $(document).ready(function(){
     konaRequest.onload = function(){
         let kdata = JSON.parse(this.response);
         let kCurrentCond = kdata.properties.textDescription;
-        let kTempInF = (kdata.properties.temperature.value * 1.8) + 32;
+        let kTempInF = parseFloat((kdata.properties.temperature.value * 1.8) + 32).toFixed(1);
         let konaTime = new Date(kdata.properties.timestamp).toLocaleString("en-US", {timeZone: "Pacific/Honolulu"});
-        $("#kona").append("Kona<br />Last Updated: " + konaTime + "<br />Current Conditions: " + kCurrentCond + "<br />Temp: " + parseFloat(kTempInF).toFixed(1) + "&deg;" );
+
+        $("#konaTime").append(konaTime);
+        $("#konaCurrentCond").append(kCurrentCond);
+        $("#konaTemp").append(kTempInF);
     };
     konaRequest.send();
 });

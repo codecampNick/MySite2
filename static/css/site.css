@@ -37,7 +37,7 @@ body{
 
 .content{
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 #content{
@@ -65,4 +65,8 @@ a{
 .weather{
     color: white;
     font-size: 14px;
+}
+
+.lastUpdated{
+    font-size: 10px;
 }

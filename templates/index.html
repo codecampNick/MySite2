@@ -36,16 +36,27 @@
     <div id="content">
         <div class="weather" style="margin: 75px">
             <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-6" id="parker"></div>
-                        <div class="col-lg-6" id="kona"></div>
+                        <div class="col-lg-6" id="parker">
+                            <div>Parker, Colorado</div>
+                            <div>Last Updated <span class="lastUpdated">(Local Time)</span>: <span id="parkerTime"></span></div>
+                            <div>Current Conditions: <span id="parkerCurrentCond"></span></div>
+                            <div>Temp: <span id="parkerTemp"></span>&deg;</div>
+                        </div>
+                        <div class="col-lg-6" id="kona">
+                            <div>Kona, Hawaii</div>
+                            <div>Last Updated <span class="lastUpdated">(Local Time)</span>: <span id="konaTime"></span></div>
+                            <div>Current Conditions: <span id="konaCurrentCond"></span></div>
+                            <div>Temp: <span id="konaTemp"></span>&deg;</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-2"></div>
             </div>
         </div>
+        <div>
         {% block content %}
         {% endblock content %}
     </div>
