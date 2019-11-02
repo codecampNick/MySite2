@@ -73,7 +73,7 @@ a{
 
 .weather-container{
     padding: 1em;
-    margin: 2em;
+    margin: .5em;
     display: inline-block;
     text-align: center;
     background-color: rgba(128,128,128,.2);
