@@ -16,8 +16,9 @@ $(document).ready(function(){
         $("#parkerCurrentCond").append(curCond);
         $("#parkerTemp").append(tempInF);
     };
+    //parkerRequest.setRequestHeader("User-Agent", "websie / 1.0 just adding Parker weather data to a personal site");
     parkerRequest.send();
-    console.log("kona request")
+
     let konaRequest = new XMLHttpRequest();
     konaRequest.open("GET", 'https://api.weather.gov/stations/PHKO/observations/latest', true);
     konaRequest.onload = function(){
@@ -30,5 +31,6 @@ $(document).ready(function(){
         $("#konaCurrentCond").append(kCurrentCond);
         $("#konaTemp").append(kTempInF);
     };
+    //konaRequest.setRequestHeader("User-Agent", "websie / 1.0 just adding Kona weather data to a personal site");
     konaRequest.send();
 });
