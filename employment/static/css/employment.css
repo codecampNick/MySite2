@@ -18,19 +18,7 @@ a:hover{
 .even{
     background-color: rgba(217, 183, 176, 0.1);
 }
-/*#employment-home{
-    display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    grid-template-rows: 2;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    border: solid 3px black;
-    grid-template-areas:
-        "emp-header-name emp-header-accomp emp-header-description"
-        "emp-details emp-accomp emp-description";
-    background-color: gray;
-}*/
-/*header styling*/
+
 .emp-header{
     color: white;
     font-size: 25px;
@@ -52,32 +40,11 @@ a:hover{
     color: rgba(217, 183, 176);
 }
 
-/*
-.emp-header-name{
-    grid-area: header-name;
+#resume-link{
+    text-align: center;
 }
 
-.emp-header-accomp{
-    grid-area: header-accomp;
+.btn-resume{
+    margin: -10px 0px 10px 0px;
+    background-color: rgba(220, 141, 124, 0.5);
 }
-
-.emp-header-description{
-    grid-area: header-description;
-}*/
-
-/*body styling*/
-/*.holder-container{
-    grid-area:
-    background-color: black;
-}
-
-.emp-base{
-    padding: 10px;
-}
-.holder-details{
-     background-color: brown;
-}
-
-.holder-desc{
-    background-color: blue;
-}*/
