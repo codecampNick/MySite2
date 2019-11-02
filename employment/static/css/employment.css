@@ -23,17 +23,21 @@ a:hover{
     color: white;
     font-size: 25px;
     background-color: rgba(220, 141, 124, 0.5);
-    border: black solid 3px;
+    border-top: rgba(255,255,204,.4) solid 1.5px;
+    border-right: rgba(255,255,204,.4) solid 3px;
+    border-bottom: rgba(255,255,204,.4) solid 1.5px;
+    border-left: rgba(255,255,204,.4) solid 3px;
     border-radius: 5px;
 }
 .emp-body{
-    border-top: black solid 1.5px;
-    border-right: black solid 3px;
-    border-bottom: black solid 1.5px;
-    border-left: black solid 3px;
+    border-top: rgba(255,255,204,.4) solid 1.5px;
+    border-right: rgba(255,255,204,.4) solid 3px;
+    border-bottom: rgba(255,255,204,.4) solid 1.5px;
+    border-left: rgba(255,255,204,.4) solid 3px;
     border-radius: 5px;
     margin-top: 5px;
     color: rgba(250, 221, 197);
+
 }
 
 .employment-header{
@@ -46,5 +50,9 @@ a:hover{
 
 .btn-resume{
     margin: -10px 0px 10px 0px;
+    border-top: rgba(255,255,204,.4) solid 1.5px;
+    border-right: rgba(255,255,204,.4) solid 3px;
+    border-bottom: rgba(255,255,204,.4) solid 1.5px;
+    border-left: rgba(255,255,204,.4) solid 3px;
     background-color: rgba(220, 141, 124, 0.5);
 }
