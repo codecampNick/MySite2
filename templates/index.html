@@ -37,28 +37,20 @@
     </nav>
     <div class="container-fluid">
         <div id="content">
-            <div class="weather" style="margin: 75px">
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-6" id="parker">
-                                <div>Parker, Colorado</div>
-                                <div>Last Updated <span class="lastUpdated">(Local Time)</span>: <span
-                                        id="parkerTime"></span></div>
-                                <div>Current Conditions: <span id="parkerCurrentCond"></span></div>
-                                <div>Temp: <span id="parkerTemp"></span></div>
-                            </div>
-                            <div class="col-lg-6" id="kona">
-                                <div>Kona, Hawaii</div>
-                                <div>Last Updated <span class="lastUpdated">(Local Time)</span>: <span id="konaTime"></span>
-                                </div>
-                                <div>Current Conditions: <span id="konaCurrentCond"></span></div>
-                                <div>Temp: <span id="konaTemp"></span></div>
-                            </div>
-                        </div>
+            <div class="weather">
+                <div class="weather-container">
+                    <div>Parker, Colorado</div>
+                    <div>Last Updated <span class="lastUpdated">(Local Time)</span>: <span
+                            id="parkerTime"></span></div>
+                    <div>Current Conditions: <span id="parkerCurrentCond"></span></div>
+                    <div>Temp: <span id="parkerTemp"></span></div>
+                </div>
+                <div class="weather-container">
+                    <div>Kona, Hawaii</div>
+                    <div>Last Updated <span class="lastUpdated">(Local Time)</span>: <span id="konaTime"></span>
                     </div>
-                    <div class="col-lg-2"></div>
+                    <div>Current Conditions: <span id="konaCurrentCond"></span></div>
+                    <div>Temp: <span id="konaTemp"></span></div>
                 </div>
             </div>
             <div>
@@ -73,8 +65,6 @@
             <div class="col-lg-4" style="text-align: right">Created with Django/Python/MySql</div>
         </div>
     </div>
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

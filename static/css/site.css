@@ -64,8 +64,21 @@ a{
 }
 
 .weather{
+    margin-top: 5em;
+    margin-bottom: -5em;
+    text-align: center;
     color: rgba(255,255,204);
     font-size: 14px;
+}
+
+.weather-container{
+    padding: 1em;
+    margin: 2em;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(128,128,128,.2);
+    border: .1em solid rgba(255,255,204,.4);
+    border-radius: 15px;
 }
 
 .lastUpdated{
