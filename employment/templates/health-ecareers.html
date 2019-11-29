@@ -1,10 +1,63 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/employment.css' %}" />{% endblock css %}
+{% block nav_bar_employment %} active {% endblock nav_bar_employment %}
 {% block title %}{{ title }}{% endblock title %}
 {% block content %}
     <div class="content">
-        <h1>Health eCareers Details</h1>
-    <h3>Some stuff about HeC</h3>
+        <h1 class="employment-header">Health eCareers</h1>
+        <div class="row" style="color: white">
+            <div class="col-lg-12 col-xs-1 employment-header"><h3>About</h3></div>
+            <div class="col-lg-12 col-xs-1">
+                Health eCareers is a niche career center that brings together opportunities and providers.<br>
+                It is a subsidiary of EverdayHealth Pro.<br>Providers supported:
+                <ul>
+                    <li>Nurse Practitioner</li>
+                    <li>Physicians/Surgeons</li>
+                    <li>Physician Assistant</li>
+                    <li>Certified Registered Nurse Anesthetists</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-xs-1 employment-header">
+                <h3>Responsibilities</h3></div>
+                <div class="col-lg-12 col-xs-1">
+                  <ul>
+                      <li>Create and maintain imports
+                        <ul>
+                            <li>Utilize program (Kapow) to scrape websites/transform feed files</li>
+                            <li>Create adjust configuration files as needed</li>
+                        </ul>
+                      </li>
+                      <li>Maintain Import code base (C#)</li>
+                      <li>Create and maintain outbound feeds
+                        <ul>
+                            <li>Main program was C#</li>
+                            <li>used xslt transforms for individual feeds</li>
+                        </ul>
+                      </li>
+                      <li>Create automated test cases
+                          <ul>
+                              <li>C# and selenium</li>
+                              <li>Jira/Xray
+                                <ul>
+                                    <li>TFS/Test Manager</li>
+                                </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+                </div>
+            <div class="col-lg-12 col-xs-1 employment-header">
+                <h3>Accomplishments</h3></div>
+                <div class="col-lg-12 col-xs-1">
+                    <ul>
+                        <li>Promoted to Software Engineer</li>
+                        <li>Started implementing python scripts to automate tasks</li>
+                        <li>Started utilizing Jenkins to automate code deploys</li>
+                    </ul>
+                </div>
+            <div class="col-lg-12 col-xs-1"></div>
+            <div class="col-lg-12 col-xs-1"></div>
+        </div>
     </div>
 {% endblock content %}

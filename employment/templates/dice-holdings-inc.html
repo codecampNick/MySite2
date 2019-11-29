@@ -1,10 +1,74 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block css%}<link rel="stylesheet" type="text/css" href="{% static 'css/employment.css' %}" />{% endblock css %}
+{% block nav_bar_employment %} active {% endblock nav_bar_employment %}
 {% block title %}{{ title }}{% endblock title %}
 {% block content %}
     <div class="content">
-        <h1>Dice Holdings Details</h1>
-    <h3>Some stuff about Dice</h3>
+        <h1 class="employment-header">Dice Holdings</h1>
+        <div class="row" style="color: white">
+            <div class="col-lg-12 col-xs-1 employment-header"><h3>About</h3></div>
+            <div class="col-lg-12 col-xs-1">
+                Dice Holdings (DHI Inc) is the parent company of several niche career centers.<br>
+                These centers included:
+                <ul>
+                    <li><a target="_blank" href="https://www.clearancejobs.com/">ClearanceJobs</a></li>
+                    <li><a target="_blank" href="https://www.dice.com/">Dice</a></li>
+                    <li><a target="_blank" href="https://www.efinancialcareers.com/">eFinancialCareers</a></li>
+                    <li><a target="_blank" href="https://www.biospace.com/">BioSpace</a></li>
+                    <li><a target="_blank" href="https://www.healthecareers.com/">Heath eCareers</a></li>
+                    <li><a target="_blank" href="https://www.hcareers.com/">HCareers</a></li>
+                </ul>
+                <p style="margin-top: -15px;font-size: 12px">*<em>DHi has spun off several brands to focus on a tech first strategy.</em></p>
+            </div>
+            <div class="col-lg-12 col-xs-1 employment-header">
+                <h3>Responsibilities</h3></div>
+                <div class="col-lg-12 col-xs-1">
+                  <ul>
+                      <li>Create and maintain imports
+                        <ul>
+                            <li>Utilize program (Kapow) to scrape websites/transform feed files</li>
+                            <li>Create adjust configuration files as needed</li>
+                        </ul>
+                      </li>
+                      <li>Maintain Import code base (C#)</li>
+                      <li>Create and maintain outbound feeds
+                        <ul>
+                            <li>Main program was C#</li>
+                            <li>used xslt transforms for individual feeds</li>
+                        </ul>
+                      </li>
+                      <li>Create automated test cases
+                      <ul>
+                          <li>C# and selenium</li>
+                          <li>TFS/Test Manager</li>
+                      </ul>
+                      </li>
+                  </ul>
+                </div>
+            <div class="col-lg-12 col-xs-1 employment-header">
+                <h3>Accomplishments</h3></div>
+                <div class="col-lg-12 col-xs-1">
+                    <ul>
+                        <li>2015 President's Club
+                            <ul>
+                                <li>One of the first to win when criteria was adjusted to allow individuals outside of sales to win</li>
+                                <li>Nominated by peers and approved by upper management</li>
+                                <li>Awarded once a year, "Best of the Best" get together to celebrate accomplishments</li>
+                            </ul>
+                        </li>
+                        <li>Promoted to Senior Feeds Fulfillment Specialist</li>
+                        <li>Awarded several quarterly awards
+                            <ul>
+                                <li>Submitted by peers, approved by management</li>
+                            </ul>
+                        </li>
+                        <li>Improved the appearance of postings before hitting review</li>
+                        <li>Continued to develop C# apps to automate tasks</li>
+                    </ul>
+                </div>
+            <div class="col-lg-12 col-xs-1"></div>
+            <div class="col-lg-12 col-xs-1"></div>
+        </div>
     </div>
 {% endblock content %}
