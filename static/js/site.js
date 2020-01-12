@@ -16,7 +16,6 @@ $(document).ready(function(){
         $("#parkerCurrentCond").append(curCond);
         $("#parkerTemp").append(tempInF);
     };
-    //parkerRequest.setRequestHeader("User-Agent", "websie / 1.0 just adding Parker weather data to a personal site");
     parkerRequest.send();
 
     let konaRequest = new XMLHttpRequest();
