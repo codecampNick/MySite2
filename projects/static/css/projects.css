@@ -6,16 +6,15 @@ body{
 h1, h4{
     color: rgba(255,255,204);
 }
-
+/*
 .card{
-    /*background: rgba(220,220,220,0.2);*/
     background: rgba(255,255,255,0.1);
     border: rgba(255,255,204) solid 1px;
     margin-top: 25px;
     margin-bottom: 5px;
 }
+*/
 
 .pro-card-text{
-    /*color: rgba(0,51,0,1);*/
     color: rgba(255,255,204);
 }
