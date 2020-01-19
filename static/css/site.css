@@ -51,7 +51,7 @@ body{
 
 .content-container{
     background-color: rgba(0,0,0, 0.1);
-    color: white;
+    color: rgba(255,255,204);
     border-radius: 10px;
     border: .1em solid rgba(255,255,204,.4);
     opacity: .8;
@@ -71,7 +71,7 @@ body{
     margin-top: 220px;
 }
 a{
-    color: red;
+    color: rgba(255,200,0);
 }
 
 .weather{
