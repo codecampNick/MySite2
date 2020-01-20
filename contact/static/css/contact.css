@@ -10,6 +10,13 @@
     /*color: indianred;*/
 }
 
+
+@media (min-width: 40px) and (max-width: 600px) {
+    #phone{
+        width: 100%;
+    }
+}
+
 .contact-container{
     background-color: rgba(0,0,0, 0.1);
     color: rgba(255,255,204);
