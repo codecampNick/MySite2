@@ -4,8 +4,8 @@
 {% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}" />{% endblock css %}
 {% block nav_bar_contact %} active {% endblock nav_bar_contact %}
 {% block content %}
-    <div class="content content-container">
-        <div>
+    <div class="content">
+        <div class="contact-container">
             <form action="" method="post">
             {% csrf_token %}
                 <ul style="list-style: none;">

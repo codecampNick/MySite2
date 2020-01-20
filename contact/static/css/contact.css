@@ -9,3 +9,13 @@
     font-size:13px;
     /*color: indianred;*/
 }
+
+.contact-container{
+    background-color: rgba(0,0,0, 0.1);
+    color: rgba(255,255,204);
+    border-radius: 10px;
+    border: .1em solid rgba(255,255,204,.4);
+    /*opacity: .8;*/
+    padding: 5px;
+    width: 22em;
+}
