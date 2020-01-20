@@ -8,7 +8,7 @@
         <div class="contact-container">
             <form action="" method="post">
             {% csrf_token %}
-                <ul style="list-style: none;">
+                <ul style="list-style: none; padding-left: 0">
                     {% for field in form %}
                     <li class="home-text"><span id="field-lbl">{{ field.label }}<span id="field-help-text"><span id="{{ field.html_name }}_count">{{ field.field.max_length }}</span> {{field.help_text}}</span></span><span id="field">{{ field }}</span><p>{{ field.errors.as_text}}</p></li>
                     {% endfor %}

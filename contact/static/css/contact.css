@@ -15,7 +15,9 @@
     color: rgba(255,255,204);
     border-radius: 10px;
     border: .1em solid rgba(255,255,204,.4);
-    /*opacity: .8;*/
+    /*opacity: .8;
+    margin: 5px;*/
     padding: 5px;
-    width: 22em;
+    width: 18em;
+    text-align: center;
 }
