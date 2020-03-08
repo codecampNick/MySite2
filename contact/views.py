@@ -9,7 +9,7 @@ def index(request):
         form = ContactForm()
     else:
         form = ContactForm(request.POST)
-        if form.is_valid():
+        if form.is_valid() and len(form.data['optional_contact']) == 0:
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['from_email']
             message = form.cleaned_data['message'] + '\n\ncontact via: ' + from_email
