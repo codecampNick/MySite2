@@ -12,7 +12,7 @@ def index(request):
         if form.is_valid() and len(form.data['optional_contact']) == 0:
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message'] + '\n\ncontact via: ' + from_email
+            message = f"Contacting Persons Name: {form.cleaned_data['from_name']}\r\n\r\n{form.cleaned_data['message']}\n\nContact Via: {from_email}"
             try:
                 send_mail(subject,message,'nick.jp.ross@gmail.com',['nick.jp.ross@gmail.com'])
             except BadHeaderError:
