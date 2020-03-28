@@ -3,6 +3,16 @@ body{
     background-size: cover;
 }
 
+h4{
+    text-align: center;
+    color: rgba(250, 221, 197);
+}
+
+.hover-link{
+    cursor: pointer;
+    font-size: 12pt;
+}
+
 a{
     color: rgba(250, 221, 197);
     /*text-shadow: -.5px 0 black, 0 1px black, 1px 0 black, 0 -.5px black;*/
@@ -20,13 +30,13 @@ a:hover{
 }
 
 .emp-header{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
     color: white;
     font-size: 25px;
     background-color: rgba(220, 141, 124, 0.5);
-    border-top: rgba(255,255,204,.4) solid 1.5px;
-    border-right: rgba(255,255,204,.4) solid 3px;
-    border-bottom: rgba(255,255,204,.4) solid 1.5px;
-    border-left: rgba(255,255,204,.4) solid 3px;
+    border: rgba(255,255,204,.4) solid 1.5px;
     border-radius: 5px;
 }
 .emp-body{
