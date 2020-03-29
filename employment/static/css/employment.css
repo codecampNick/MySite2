@@ -8,14 +8,13 @@ h4{
     color: rgba(250, 221, 197);
 }
 
-.hover-link{
+.header-sub-text{
     cursor: pointer;
     font-size: 12pt;
 }
 
 a{
     color: rgba(250, 221, 197);
-    /*text-shadow: -.5px 0 black, 0 1px black, 1px 0 black, 0 -.5px black;*/
 }
 
 a:hover{
@@ -39,6 +38,7 @@ a:hover{
     border: rgba(255,255,204,.4) solid 1.5px;
     border-radius: 5px;
 }
+
 .emp-body{
     border-top: rgba(255,255,204,.4) solid 1.5px;
     border-right: rgba(255,255,204,.4) solid 3px;
@@ -47,7 +47,6 @@ a:hover{
     border-radius: 5px;
     margin-top: 5px;
     color: rgba(250, 221, 197);
-
 }
 
 .employment-header{

@@ -9,14 +9,9 @@
     <div id="resume-link">
         <a class="btn btn-secondary btn-resume" target="_blank" href="{% static 'resources/Nick Ross.pdf' %}">View Resume</a>
     </div>
-        <div>
-            <!--<div class="row emp-header">
-                <div class="col-lg-4 col-xs-1">Employer Details</div>
-                <div class="col-lg-4 col-xs-1">Accomplishments</div>
-                <div class="col-lg-4 col-xs-1">Employer Description</div>
-            </div>-->
+        <div id="employment-container">
             {% for employer in employers %}
-            <h4>{{ employer.name }} <span class="hover-link" id="{{ employer.name|slugify|lower }}-header">show more&#8230;</span></h4>
+            <h4>{{ employer.name }} <span class="show-hide header-sub-text" id="{{ employer.name|slugify|lower }}-header">(show more...)</span></h4>
             <div class="row emp-body {% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}" id="{{ employer.name|slugify|lower }}-body" style="display: none">
                     <div class="col-lg-4 col-xs-1"><span>
                         <div class="emp-header">Employer Details</div>
