@@ -1,13 +1,16 @@
 body{
-   /* background-color: blue;
+   /*
     background: url("../images/whale.jpg") no-repeat center center fixed;
-    background-size: cover;*/
+    background-size: cover;
+    */
 }
 @media (min-width: 40px) and (max-width: 600px) {
     body {
-
-        background: url("../images/whale_phone.jpg") no-repeat center center fixed;
-        background-size: cover;
+        background: url("../images/whale_phone.jpg") no-repeat center center fixed  ;
+        background-size: 100%;
+    }
+    #boob{
+        width: 100%;
     }
 }
 /*
