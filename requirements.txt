@@ -1,5 +1,5 @@
 boto==2.49.0
-Django==2.1
+Django==2.2.13
 django-ses==0.8.10
 future==0.17.1
 mysql-connector==2.2.9
