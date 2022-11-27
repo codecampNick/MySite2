@@ -11,6 +11,7 @@ def index(request):
                    'employers': employers,
                    'accomplishments': accomplishments})
 
+
 def aeriosdirect(request):
     return render(request, 'aerios-direct-inc.html',
                   {
@@ -36,4 +37,11 @@ def ontargetjobs(request):
     return render(request, 'ontargetjobs.html',
                   {
                       'title': 'Ontargetjobs Details',
+                  })
+
+
+def doximity(request):
+    return render(request, 'doximity.html',
+                  {
+                      'title': 'Doximity Details'
                   })
